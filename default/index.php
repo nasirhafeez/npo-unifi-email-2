@@ -20,7 +20,7 @@ mysqli_close($con);
 if ($result->num_rows >= 1) {
   $row = mysqli_fetch_array($result);
 
-  $_SESSION['user_type'] = "repeat";
+  $_SESSION["user_type"] = "repeat";
   $_SESSION["video_count"] = (int)$row[8];
   header("Location: welcome.php");
 }
