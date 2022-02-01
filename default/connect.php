@@ -3,7 +3,7 @@
 require 'header.php';
 include 'config.php';
 
-$myVideoDir = '../media';
+$myVideoDir = '../assets/media';
 $extension = 'mp4';
 $videoFile = false;
 $pseudoDir = scandir($myVideoDir);
@@ -100,7 +100,7 @@ mysqli_close($con);
             <br>
             <div class="video_wrap">
                 <video controls autoplay>
-                    <source src="../media/<?php echo htmlspecialchars($video_name); ?>" type="video/mp4">
+                    <source src="../assets/media/<?php echo htmlspecialchars($video_name); ?>" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
             </div>
