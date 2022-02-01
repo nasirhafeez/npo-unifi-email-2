@@ -3,6 +3,26 @@
 require 'header.php';
 include 'config.php';
 
+$myVideoDir = '../media';
+$extension = 'mp4';
+$videoFile = false;
+$pseudoDir = scandir($myVideoDir);
+$myitems = array();
+foreach($pseudoDir as $item) {
+  if ( $item != '..' && $item != '.' && !is_dir($item) ) {
+    $ext = preg_replace('#^.*\.([a-zA-Z0-9]+)$#', '$1', $item);
+    if ( $ext == $extension ) {
+      $videoFile = $item;
+      if ( $videoFile <> "" ) {
+        array_push($myitems, $videoFile);
+      }
+    }
+  }
+}
+
+$rand_item = array_rand($myitems, 1);
+$video_name = $myitems[$rand_item];
+
 $mac = $_SESSION["id"];
 $apmac = $_SESSION["ap"];
 $method = $_SESSION["method"];
@@ -56,7 +76,7 @@ mysqli_close($con);
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <link rel="stylesheet" href="../assets/styles/bulma.min.css" />
     <link rel="stylesheet" href="../vendor/fortawesome/font-awesome/css/all.css" />
-    <meta http-equiv="refresh" content="5;url=https://www.google.com" />
+    <meta http-equiv="refresh" content="45;url=https://www.google.com" />
     <link rel="icon" type="image/png" href="../assets/images/favicomatic/favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="../assets/images/favicomatic/favicon-16x16.png" sizes="16x16" />
     <link rel="stylesheet" href="../assets/styles/style.css" />
@@ -74,12 +94,40 @@ mysqli_close($con);
 
     <div class="main">
         <seection class="section">
+            <div class="centered_text">
+                <div id="countdown"></div>
+            </div>
+            <br>
+            <div class="video_wrap">
+                <video controls autoplay>
+                    <source src="../media/<?php echo htmlspecialchars($video_name); ?>" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </seection>
+    </div>
+
+    <div class="main">
+        <seection class="section">
             <div id="margin_zero" class="content has-text-centered is-size-6">Thanks, you are now </div>
             <div id="margin_zero" class="content has-text-centered is-size-6">authorized on WiFi</div>
         </seection>
     </div>
 
 </div>
+
+<script type="text/javascript">
+    var timeleft = 45;
+    var downloadTimer = setInterval(function(){
+        if(timeleft <= 0){
+            clearInterval(downloadTimer);
+        } else {
+            document.getElementById("countdown").innerHTML = "Browsing will start immediately after the video in " + timeleft + "s";
+        }
+        timeleft -= 1;
+    }, 1000);
+</script>
+
 </body>
 
 </html>
