@@ -8,6 +8,7 @@ if (!isset($_SESSION['id'])) {
   $_SESSION["ap"] = $_GET['ap'];
 }
 
+$_SESSION["video_count"] = 0;
 $_SESSION["user_type"] = "new";
 $_SESSION["method"] = "sms";
 
@@ -18,6 +19,7 @@ mysqli_close($con);
 
 if ($result->num_rows >= 1) {
   $_SESSION['user_type'] = "repeat";
+  $_SESSION["video_count"] = (int)$row[8];
   header("Location: welcome.php");
 }
 

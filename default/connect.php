@@ -30,6 +30,7 @@ $name = $_SESSION['name'];
 $phone = $_SESSION['phone'];
 $email = $_SESSION['email'];
 $last_updated = date("Y-m-d H:i:s");
+$video_count = $_SESSION["video_count"] + 1;
 
 $controlleruser = $_SERVER['CONTROLLER_USER'];
 $controllerpassword = $_SERVER['CONTROLLER_PASSWORD'];
@@ -55,13 +56,14 @@ CREATE TABLE IF NOT EXISTS `$table_name` (
     `apmac` varchar(17) NOT NULL,
     `method` varchar(10) NOT NULL,
     `last_updated` datetime NOT NULL,
+    `video_count` int(6) NOT NULL,
     PRIMARY KEY (`id`)
 )");
 
 if ($_SESSION['user_type'] == "new") {
-    mysqli_query($con, "INSERT INTO `$table_name` (phone, email, name, mac, apmac, method, last_updated) VALUES ('$phone','$email','$name','$mac', '$apmac', '$method', '$last_updated')");
+    mysqli_query($con, "INSERT INTO `$table_name` (phone, email, name, mac, apmac, method, last_updated, video_count) VALUES ('$phone','$email','$name','$mac', '$apmac', '$method', '$last_updated', '$video_count')");
 } else {
-    mysqli_query($con, "UPDATE `$table_name` SET last_updated = '$last_updated' WHERE mac = '$mac'");
+    mysqli_query($con, "UPDATE `$table_name` SET last_updated = '$last_updated', video_count = '$video_count' WHERE mac = '$mac'");
 }
 
 mysqli_close($con);
