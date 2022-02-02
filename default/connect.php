@@ -26,7 +26,8 @@ $video_name = $myitems[$rand_item];
 $mac = $_SESSION["id"];
 $apmac = $_SESSION["ap"];
 $method = $_SESSION["method"];
-$name = $_SESSION['name'];
+$fname = $_SESSION['fname'];
+$lname = $_SESSION['lname'];
 $phone = $_SESSION['phone'];
 $email = $_SESSION['email'];
 $last_updated = date("Y-m-d H:i:s");
@@ -51,7 +52,8 @@ CREATE TABLE IF NOT EXISTS `$table_name` (
     `id` int(11) NOT NULL AUTO_INCREMENT,
     `phone` varchar(16) NOT NULL,
     `email` varchar(45) NOT NULL,
-    `name` varchar(100) NOT NULL,
+    `first_name` varchar(100) NOT NULL,
+    `last_name` varchar(100) NOT NULL,
     `mac` varchar(17) NOT NULL,
     `apmac` varchar(17) NOT NULL,
     `method` varchar(10) NOT NULL,
@@ -61,7 +63,7 @@ CREATE TABLE IF NOT EXISTS `$table_name` (
 )");
 
 if ($_SESSION['user_type'] == "new") {
-    mysqli_query($con, "INSERT INTO `$table_name` (phone, email, name, mac, apmac, method, last_updated, video_count) VALUES ('$phone','$email','$name','$mac', '$apmac', '$method', '$last_updated', '$video_count')");
+    mysqli_query($con, "INSERT INTO `$table_name` (phone, email, first_name, last_name, mac, apmac, method, last_updated, video_count) VALUES ('$phone','$email','$fname','$lname','$mac', '$apmac', '$method', '$last_updated', '$video_count')");
 } else {
     mysqli_query($con, "UPDATE `$table_name` SET last_updated = '$last_updated', video_count = '$video_count' WHERE mac = '$mac'");
 }
