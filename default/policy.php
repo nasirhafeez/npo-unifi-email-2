@@ -1,54 +1,115 @@
-<h2>Welcome</h2>
-	<p>These terms and conditions outline the rules and regulations for the use of this Website.</p> 
-	<p>By accessing this website we assume you accept these terms and conditions in full. Do not continue to use this website 
-	if you do not accept all of the terms and conditions stated on this page.</p>
-	<p>The following terminology applies to these Terms and Conditions, Privacy Statement and Disclaimer Notice
-	and any or all Agreements: “Client”, “You” and “Your” refers to you, the person accessing this website
-	and accepting the Company’s terms and conditions. “The Company”, “Ourselves”, “We”, “Our” and “Us”, refers
-	to our Company. “Party”, “Parties”, or “Us”, refers to both the Client and ourselves, or either the Client
-	or ourselves. All terms refer to the offer, acceptance and consideration of payment necessary to undertake
-	the process of our assistance to the Client in the most appropriate manner, whether by formal meetings
-	of a fixed duration, or any other means, for the express purpose of meeting the Client’s needs in respect
-	of provision of the Company’s stated services/products, in accordance with and subject to, prevailing law
-	of . Any use of the above terminology or other words in the singular, plural,
-	capitalisation and/or he/she or they, are taken as interchangeable and therefore as referring to same.</p><h2>Cookies</h2>
-	<p>We employ the use of cookies. By using this website you consent to the use of cookies 
-	in accordance with this website's privacy policy.</p><p>Most of the modern day interactive web sites
-	use cookies to enable us to retrieve user details for each visit. Cookies are used in some areas of our site
-	to enable the functionality of this area and ease of use for those people visiting. Some of our 
-	affiliate / advertising partners may also use cookies.</p><h2>License</h2>
-	<p>Unless otherwise stated, this website and/or it’s licensors own the intellectual property rights for
-	all material on this website. All intellectual property rights are reserved.</p>
-	<p>Redistribute content from this website (unless content is specifically made for redistribution).</p>
-<h2>Reservation of Rights</h2>
-	<p>We reserve the right at any time and in its sole discretion to request that you remove all links or any particular
-	link to our Web site. You agree to immediately remove all links to our Web site upon such request. We also
-	reserve the right to amend these terms and conditions and its linking policy at any time. By continuing
-	to link to our Web site, you agree to be bound to and abide by these linking terms and conditions.</p>
-<h2>Removal of links from our website</h2>
-	<p>If you find any link on our Web site or any linked web site objectionable for any reason, you may contact
-	us about this. We will consider requests to remove links but will have no obligation to do so or to respond
-	directly to you.</p>
-	<p>Whilst we endeavour to ensure that the information on this website is correct, we do not warrant its completeness
-	or accuracy; nor do we commit to ensuring that the website remains available or that the material on the
-	website is kept up to date.</p>
-<h2>Content Liability</h2>
-	<p>We shall have no responsibility or liability for any content appearing on your Web site. You agree to indemnify
-	and defend us against all claims arising out of or based upon your Website. No link(s) may appear on any
-	page on your Web site or within any context containing content or materials that may be interpreted as
-	libelous, obscene or criminal, or which infringes, otherwise violates, or advocates the infringement or
-	other violation of, any third party rights.</p>
-<h2>Disclaimer</h2>
-	<p>To the maximum extent permitted by applicable law, we exclude all representations, warranties and conditions relating to our website and the use of this website (including, without limitation, any warranties implied by law in respect of satisfactory quality, fitness for purpose and/or the use of reasonable care and skill). Nothing in this disclaimer will:</p>
-	<ol>
-	<li>limit or exclude our or your liability for death or personal injury resulting from negligence;</li>
-	<li>limit or exclude our or your liability for fraud or fraudulent misrepresentation;</li>
-	<li>limit any of our or your liabilities in any way that is not permitted under applicable law; or</li>
-	<li>exclude any of our or your liabilities that may not be excluded under applicable law.</li>
-	</ol>
-	<p>The limitations and exclusions of liability set out in this Section and elsewhere in this disclaimer: (a)
-	are subject to the preceding paragraph; and (b) govern all liabilities arising under the disclaimer or
-	in relation to the subject matter of this disclaimer, including liabilities arising in contract, in tort
-	(including negligence) and for breach of statutory duty.</p>
-	<p>To the extent that the website and the information and services on the website are provided free of charge,
-	we will not be liable for any loss or damage of any nature.</p>
+<?php
+
+require 'header.php';
+
+?>
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>
+      <?php echo htmlspecialchars($business_name); ?> WiFi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="../assets/styles/bulma.min.css" />
+    <link rel="stylesheet" href="../vendor/fortawesome/font-awesome/css/all.css" />
+    <link rel="icon" type="image/png" href="../assets/images/favicomatic/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="../assets/images/favicomatic/favicon-16x16.png" sizes="16x16" />
+    <link rel="stylesheet" href="../assets/styles/style.css" />
+</head>
+<body>
+<div class="page">
+
+    <div class="head">
+        <br>
+        <figure id="logo">
+            <img src="../assets/images/logo.png">
+        </figure>
+    </div>
+
+    <div class="privacy">
+        <div class="content is-size-4">TERMS OF USE</div>
+        <div class="content"><strong>IMPORTANT NOTICE: THIS AGREEMENT IS SUBJECT TO BINDING ARBITRATION AND A WAIVER OF CLASS ACTION RIGHTS AS DETAILED IN THE ARBITRATION AND CLASS ACTION WAIVER SECTION BELOW.</strong></div>
+        <div class="content is-size-4">ACCEPTANCE OF THESE TERMS:</div>
+        <div class="content">NPO Systems (&ldquo;Company,&rdquo; &ldquo;we,&rdquo; &ldquo;us,&rdquo; or &ldquo;our&rdquo;) offers you the ability to connect to our WiFi (&ldquo;WiFi&rdquo;) when you are in or around our establishment(s). These Terms of Use (&ldquo;Company Terms&rdquo;) and the Terms of Use of NPO Systems, (collectively, &ldquo;Terms&rdquo;) govern your access to and use of WiFi. PLEASE READ THE TERMS THOROUGHLY AND CAREFULLY. BY REGISTERING FOR, ACCESSING, OR OTHERWISE USING THE WIFI, YOU AGREE TO BE BOUND BY THESE TERMS. IF YOU DO NOT AGREE TO THE TERMS, YOU MAY NOT REGISTER FOR, ACCESS, OR USE THE WIFI. You may accept the Company Terms by: (A) clicking to accept or agree to the Company Terms where this option is made available to you; or (B) by actually using the WiFi. In this case, you understand and agree that Company will treat your use of the WiFi as acceptance of the Company Terms from that point onward.</div>
+        <div class="content">All references to &ldquo;you&rdquo; or &ldquo;your,&rdquo; as applicable, mean the person that registers for, accesses, or uses the WiFi in any manner, and each of your heirs, assigns, and successors. If you use or access the WiFi on behalf of an entity, you represent and warrant that you have the authority to bind that entity, your acceptance of the Terms will be deemed an acceptance by that entity, and &ldquo;you&rdquo; and &ldquo;your&rdquo; herein shall refer to that entity.</div>
+        <div class="content">To the extent any provisions of the Company Terms conflict with the provisions of the Terms of Use for NPO Systems, the latter controls.</div>
+        <div class="content is-size-4">MODIFICATIONS TO THE COMPANY TERMS:</div>
+        <div class="content">We reserve the right, in our sole discretion, to modify the Company Terms at any time and without prior notice. Your continued access to or use of the WiFi after modifications to the Company Terms shall constitute your agreement to be bound by the amended Company Terms. If you do not agree to the modified Company Terms, you may not access or use the WiFi.</div>
+        <div class="content is-size-4">PRIVACY POLICY:</div>
+        <div class="content">Please review the&nbsp;<a href="https://nposystems.com/privacy-policy/">NPO Systems Privacy Policy</a>, incorporated herein by reference, for information and notices concerning our collection, use, and disclosure of your information, and for NPO System&rsquo;s collection, use, and disclosure of your information.</div>
+        <div class="content is-size-4">ELIGIBILITY AND REGISTRATION:</div>
+        <div class="content">Access to and use of our WiFi is available only to individuals who are 13 years of age and older, and can form legally-binding contracts under applicable law. By accessing or using the WiFi, you represent and warrant that you are eligible.</div>
+        <div class="content">To access and use certain features of our WiFi, you must first register for an account. You agree to provide accurate, current, and complete information during the registration process, and to update such information to keep it accurate, current, and complete.</div>
+        <div class="content is-size-4">LICENSE:</div>
+        <div class="content">Subject to your compliance with the Terms, we grant you a limited, non-exclusive, revocable, nontransferable, and non-sublicensable license to access and use the WiFi solely for your personal use while in our establishment(s). You will not use or otherwise exploit our WiFi except as expressly permitted in the Terms. You agree to not tamper with, interfere, circumvent any security measures, or otherwise impair the WiFi or violate any applicable law or regulation when you use or access the WiFi provided by us. The WiFi is provided AS IS. No licenses or rights are granted to you by implication or otherwise under any intellectual property rights owned or controlled by us or our licensors, except for the licenses and rights expressly granted in the Terms.</div>
+        <div class="content is-size-4">ACCEPTABLE CONDUCT:</div>
+        <div class="content">You agree to comply with all applicable laws, rules, and regulations when registering for, accessing, or using the WiFi. Without limiting the foregoing, when registering for, accessing or using the WiFi, you agree not to:</div>
+        <div class="content">
+            <ul>
+                <li>Post, upload, publish, submit, or transmit any content that:</li>
+                <li>Infringes, misappropriates, or violates a third party&rsquo;s patent, copyright, trademark, trade secret, moral rights or other intellectual property rights, or rights of publicity or privacy;</li>
+                <li>Violates, or encourages any conduct that would violate, any applicable law or regulation or would give rise to civil or criminal liability;</li>
+                <li>Is fraudulent, false, misleading, or deceptive;</li>
+                <li>Is defamatory, obscene, pornographic, vulgar, or offensive;</li>
+                <li>Promotes discrimination, bigotry, racism, hatred, harassment, or harm against any individual or group;</li>
+                <li>Is violent or threatening or promotes violence or actions that are threatening to any other person;</li>
+                <li>Promotes illegal or harmful activities or substances;</li>
+                <li>Impersonates any other person or otherwise misrepresents yourself in any way;</li>
+                <li>Constitutes spam, or competes with our business;</li>
+                <li>Contains any computer virus or other malicious code designed to attack, damage, divert, take over, disable, overburden, or otherwise impair the WiFi;</li>
+                <li>Constitutes or contains &ldquo;protected health information&rdquo; (&ldquo;PHI&rdquo;) as that term is defined at 45 C.F.R. &sect;160.103, as we are not HIPAA compliant.</li>
+                <li>Attempt to scrape or collect any personal or private information from other WiFi users;</li>
+                <li>Intercept, monitor, damage, or modify any communication not intended for you;</li>
+                <li>Cause any harm or damage to you or anyone else;</li>
+                <li>Otherwise breach the Terms; or</li>
+                <li>Attempt to do any of the foregoing.</li>
+            </ul>
+        </div>
+        <div class="content">We and our third-party partners reserve the right to restrict or block access to certain sites or content, or to block access to the WiFi for any reason or no reason.</div>
+        <div class="content">You acknowledge that we have no obligation to monitor your access to or use of the WiFi for violations of the Terms, or to review any content you submit to us. However, we have the right to do so for the purpose of operating and improving the WiFi (including, without limitation, for fraud prevention, risk assessment, investigation, and customer support purposes), to ensure your compliance with the Terms, and to comply with applicable law or the order or requirement of a court, consent decree, administrative agency, or other governmental body.</div>
+        <div class="content">You understand that communications over the WiFi may not be encrypted, and you accept all risks associated with unencrypted transmissions over the WiFi. Any sensitive or confidential information (such as credit card numbers or other financial information, medical or other health-related information) transmitted through the WiFi is done at your own risk, you will be fully liable for claims arising out of the transmission of such sensitive or confidential information, and we have no liability for any claims, losses, action, damages, suits or proceedings arising out of or otherwise relating to such actions. We are not responsible for any third-party websites or services you visit while using the WiFi, or for any programs, malicious or otherwise, that you or your device downloads while connected to our WiFi.</div>
+        <div class="content is-size-4">Performance of the WiFi:</div>
+        <div class="content">In order to use the WiFi, you must have a WiFi-capable device that (a) meets U.S. and other applicable technical standards; (b) is compatible with the WiFi; (c) renders web pages in a standard HTML browser application; (d) runs the IP protocol; and (e) is configured to obtain web addresses automatically. The device must be in close enough proximity to the WiFi wireless access points to achieve connectivity with the WiFi network. You acknowledge that the WiFi utilizes public, unlicensed radio-frequency spectrum. As such, the WiFi is subject to external interferences, environmental influences, and other factors and variables beyond our reasonable control. Performance and availability may vary, including but not limited to or affected by, (a) transmission and download speed and accuracy; (b) network congestion; (c) performance, configuration, and functionality of your devices and wireless cards (including, but not limited to memory, storage and other limitations); (d) physical obstructions and distances between your device and the WiFi network; (e) availability of electric power; (f) collocation failures; (g) transmission and equipment limitations, failures, maintenance or repair; and (h) user error. The WiFi may also be interrupted, refused, limited or curtailed for these or other reasons. Company is not responsible for data lost or misdirected due to these and other foreseeable and unforeseeable factors. Network speed is an estimate and is no indication of the speed at which your device or the WiFi will operate. Actual network speed and other performance will vary.</div>
+        <div class="content">In order to maintain acceptable levels of service for all WiFi users and to improve this service, we reserve the right to monitor use of the WiFi and to make such adjustments to the use of such services as necessary to maximize the benefit and enjoyment for all WiFi users. Additionally, the WiFi service may use automated processes to monitor and scan communications over the WiFi network in order to maintain and provide services, improve your experience, ensure the integrity of your communications, and for various other purposes related to the provision of WiFi services. By using the WiFi, you acknowledge and consent to Company and NPO System&rsquo;s automated processing of your communications through the WiFi network, including information such as your IP or MAC address, HTTP requests and other information related to the provision of this service.</div>
+        <div class="content is-size-4">WIFI Subject To Interception and Unauthorized Use:</div>
+        <div class="content">You acknowledge that communications over the WiFi network may be subject to interception by unauthorized third parties. Your use of the WiFi is AS IS and AS AVAILABLE and we cannot and do not make any general or specific warranties regarding the security, availability, performance or other functionality of the WiFi. You are responsible for implementing your own security protections while using the WiFi. In the event you become aware of any unauthorized use of the WiFi or any other security breach, you agree to immediately notify us by at&nbsp;+1 (786) 390-9597&nbsp;or by&nbsp;<a href="mailto:support@nposystems.com">support@nposystems.com</a>. Company expressly disclaims any responsibility or liability for your use of the WiFi and for any lack of security that may result from your use of the WiFi. You agree to hold Company harmless for the loss of any file, data or other information while using the service, and for any unauthorized access to or utilization by any third party of any of your personal, financial, or other sensitive information.</div>
+        <div class="content">You further agree that you will not seek to hold Company responsible in any way for any third party website content, the operation of any third party website accessed via the WiFi or for the appearance of any WiFi "watermark" over a portion of any website.</div>
+        <div class="content is-size-4">INTELLECTUAL PROPERTY RIGHTS:</div>
+        <div class="content">The WiFi is protected by copyright, trademark, and other laws of the United States, foreign countries, and international conventions. Except as expressly provided in the Terms, we and our licensors exclusively own all right, title, and interest into and to the WiFi, including all associated intellectual property rights. All trademarks, service marks, logos, trade names and any other proprietary designations are the trademarks or registered trademarks of us or their respective owners.</div>
+        <div class="content is-size-4">FEEDBACK:</div>
+        <div class="content">You agree that all feedback, comments, questions, and suggestions (collectively, &ldquo;Feedback&rdquo;) you provide to us are the sole and exclusive property of us. You hereby irrevocably assign to us and agree to irrevocably assign to us all your right, title, and interest in and to all Feedback, including without limitation all worldwide patent, copyright, trade secret, moral, and other proprietary or intellectual property rights therein, and waive any moral rights you may have. We have no obligation concerning Feedback, including but not limited to, no obligation to return any materials or acknowledge receipt of any Feedback. By giving us Feedback, you represent and warrant that you have the right to disclose the Feedback and the Feedback does not violate the rights of any other person or entity. This Feedback section shall survive any termination of your WiFi registration.</div>
+        <div class="content is-size-4">ARBITRATION AND CLASS ACTION WAIVER:</div>
+        <div class="content"><strong>PLEASE READ THIS SECTION CAREFULLY. IT MAY SIGNIFICANTLY AFFECT YOUR LEGAL RIGHTS, INCLUDING YOUR RIGHT TO FILE A LAWSUIT IN COURT.</strong></div>
+        <div class="content">You and we agree that the Company Terms affect interstate commerce and that the Federal Arbitration Act governs the interpretation and enforcement of these arbitration provisions.</div>
+        <div class="content"><em>Initial Dispute Resolution:</em>&nbsp;Most disputes can be resolved without resort to litigation. You and we agree to use best efforts to settle any dispute, claim, question, or disagreement directly through consultation with the other party, and good faith negotiations shall be a condition to either party initiating a lawsuit or arbitration.</div>
+        <div class="content"><em>Binding Arbitration:</em>&nbsp;If the parties do not reach an agreed-upon solution within a period of thirty (30) days from the time informal dispute resolution under the Initial Dispute Resolution provision above, then either party may initiate binding arbitration as the sole means to resolve claims, subject to the terms set forth below. Specifically, all claims arising out of or relating to the Company Terms (including its formation, performance, and breach), the parties' relationship with each other, and/or your use of our WiFi shall be finally settled by binding arbitration administered by NPO System&rsquo;s legal department in accordance with the NPO Systems legal department rules in effect at the time the arbitration is initiated, excluding any rules or procedures governing or permitting class actions. The arbitrator, and not any federal, state, or local court or agency, shall have exclusive authority to resolve all disputes arising out of or relating to the interpretation, applicability, enforceability, or formation of the Company Terms, including, but not limited to any claim that all or any part of the Company Terms is void or voidable, or whether a claim is subject to arbitration. The arbitrator shall be empowered to grant whatever relief would be available in a court under law or in equity. The arbitrator's award shall be written, and binding on the parties and may be entered as a judgment in any court of competent jurisdiction. To start an arbitration, you must do the following: (A) Write a Demand for Arbitration that includes a description of the claim and the amount of damages you seek to recover. Email <a href="mailto:support@nposystems.com">support@nposystems.com</a> for a copy of the Demand for Arbitration; (B) Send three copies of the Demand for Arbitration, plus the appropriate filing fee, to NPO Systems, 1710 SW 99 AVE, Miami, FL, 33165; and (C) Send one copy of the Demand for Arbitration to us at 1300 SW 132 AVE, Miami, FL, 33184.</div>
+        <div class="content">To the extent the filing fee for the arbitration exceeds the cost of filing a lawsuit, we will pay the additional cost. If the arbitrator finds the arbitration to be non-frivolous, we will pay all of the actual filing and arbitrator fees for the arbitration, provided your claim does not exceed $10,000. The arbitration rules also permit you to recover attorney's fees in certain cases. The parties understand that, absent this mandatory provision, they would have the right to sue in court and have a jury trial. They further understand that, in some instances, the costs of arbitration could exceed the costs of litigation and the right to discovery may be more limited in arbitration than in court.</div>
+        <div class="content">If you are a resident of the United States, arbitration may take place at any reasonable location within the United States convenient for you. For residents outside the United States, arbitration shall be initiated in the State of California, United States of America, and you and we agree to submit to the personal jurisdiction of any federal or state court in&nbsp;<strong>San Francisco, California</strong>, in order to compel arbitration, to stay proceedings pending arbitration, or to confirm, modify, vacate, or enter judgment on the award entered by the arbitrator.</div>
+        <div class="content"><em>Class Action Waiver:</em>&nbsp;The parties further agree that the arbitration shall be conducted in their individual capacities only and not as a class action or other representative action, and the parties expressly waive their right to file a class action or seek relief on a class basis.&nbsp;<strong>YOU AND WE AGREE THAT EACH MAY BRING CLAIMS AGAINST THE OTHER ONLY IN YOUR OR ITS INDIVIDUAL CAPACITY, AND NOT AS A PLAINTIFF OR CLASS MEMBER IN ANY PURPORTED CLASS OR REPRESENTATIVE PROCEEDING.</strong>&nbsp;If any court or arbitrator determines that the class action waiver set forth in this paragraph is void or unenforceable for any reason or that an arbitration can proceed on a class basis, then the arbitration provisions set forth above shall be deemed null and void in its entirety and the parties shall be deemed to have not agreed to arbitrate disputes.</div>
+        <div class="content"><em>Exception:</em>&nbsp;Litigation of Intellectual Property and Small Claims Court Claims: Notwithstanding the parties' decision to resolve all disputes through arbitration, either party may bring an action in state or federal court or in the U.S. Patent and Trademark Office to protect its intellectual property rights (&ldquo;intellectual property rights&rdquo; means patents, copyrights, moral rights, trademarks, and trade secrets, but not privacy or publicity rights). Either party may also seek relief in a small claims court for disputes or claims within the scope of that court's jurisdiction.</div>
+        <div class="content"><em>30-Day Right to Opt Out:</em>&nbsp;You have the right to opt out and not be bound by the arbitration and class action waiver provisions set forth above by sending written notice of your decision to opt out to&nbsp;<a href="mailto:support@nposystems.com">support@nposystems.com</a>&nbsp;with the subject line, &ldquo;ARBITRATION AND CLASS ACTION WAIVER OPT-OUT.&rdquo; The notice must be sent within thirty (30) days of your first access of the WiFi, otherwise you shall be bound to arbitrate disputes in accordance with the terms of those paragraphs. If you opt out of these arbitration provisions, we also will not be bound by them.</div>
+        <div class="content"><em>Changes to this Section:</em>&nbsp;We will provide sixty (60) days&rsquo; notice of any changes to this section. Changes will become effective on the sixtieth (60th) day, and will apply prospectively only to claims arising after the sixtieth (60th) day. If a court or arbitrator decides that this subsection on &ldquo;Changes to this Section&rdquo; is not enforceable or valid, then this subsection shall be severed from the Section entitled Arbitration and Class Action Waiver, and the court or arbitrator shall apply the first Arbitration and Class Action Waiver section in existence after you began using the WiFi.</div>
+        <div class="content"><em>Survival:</em>&nbsp;This Arbitration and Class Action Waiver section shall survive any termination of your WiFi registration.</div>
+        <div class="content is-size-4">GOVERNING LAW:</div>
+        <div class="content">The Company Terms and the relationship between you and us shall be governed in all respects by the laws of the State of&nbsp;<strong>California</strong>, without regard to its conflict of law provisions. You agree that any claim or dispute you may have against us that is not subject to arbitration must be resolved by a state or federal court located in&nbsp;<strong>San Francisco, California</strong>, except as otherwise agreed by the parties. You agree to submit to the personal jurisdiction of the courts located within&nbsp;<strong>San Francisco, California</strong>&nbsp;for the purpose of litigating all such claims or disputes that are not subject to arbitration. You hereby waive any and all jurisdictional and venue defenses otherwise available.</div>
+        <div class="content is-size-4">DISCLAIMERS:</div>
+        <div class="content">OUR WIFI SERVICE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED. WITHOUT LIMITING THE FOREGOING, WE EXPLICITLY DISCLAIM ANY WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, QUIET ENJOYMENT OR NON-INFRINGEMENT, AND ANY WARRANTIES ARISING OUT OF COURSE OF DEALING OR USAGE OF TRADE. WE MAKE NO WARRANTY THAT THE WIFI WILL MEET YOUR REQUIREMENTS OR BE AVAILABLE ON AN UNINTERRUPTED, SECURE, OR ERROR-FREE BASIS. WE MAKE NO WARRANTY THAT WE WILL CONTINUE TO OFFER OR MAKE AVAILABLE THE WIFI, AND WE RESERVE THE RIGHT TO CHANGE OR TERMINATE THE WIFI WITHOUT NOTICE TO YOU. WE MAKE NO WARRANTY REGARDING THE QUALITY OF ANY PRODUCTS, SERVICES OR CONTENT PURCHASED OR OBTAINED THROUGH THE WIFI OR THE ACCURACY, TIMELINESS, TRUTHFULNESS, COMPLETENESS OR RELIABILITY OF ANY CONTENT OBTAINED THROUGH THE WIFI.</div>
+        <div class="content">NO ADVICE OR INFORMATION, WHETHER ORAL OR WRITTEN, OBTAINED FROM US OR THROUGH THE WIFI, WILL CREATE ANY WARRANTY NOT EXPRESSLY MADE HEREIN. YOU ARE SOLELY RESPONSIBLE FOR ALL OF YOUR COMMUNICATIONS AND INTERACTIONS MADE THROUGH THE WIFI.</div>
+        <div class="content is-size-4">LIMITATION OF LIABILITY:</div>
+        <div class="content">YOU ACKNOWLEDGE AND AGREE THAT, TO THE MAXIMUM EXTENT PERMITTED BY LAW, THE ENTIRE RISK ARISING OUT OF YOUR ACCESS TO AND USE OF THE WIFI REMAINS WITH YOU. NEITHER WE NOR ANY OTHER PARTY INVOLVED IN CREATING, PRODUCING, OR DELIVERING THE SERVICE OR CONTENT WILL BE LIABLE FOR ANY INCIDENTAL, SPECIAL, EXEMPLARY OR CONSEQUENTIAL DAMAGES, INCLUDING LOST PROFITS, LOSS OF DATA OR LOSS OF GOODWILL, SERVICE INTERRUPTION, COMPUTER DAMAGE OR SYSTEM FAILURE, WHETHER BASED ON WARRANTY, CONTRACT, TORT (INCLUDING NEGLIGENCE), PRODUCT LIABILITY OR ANY OTHER LEGAL THEORY, AND WHETHER OR NOT WE HAVE BEEN INFORMED OF THE POSSIBILITY OF SUCH DAMAGE, EVEN IF A LIMITED REMEDY SET FORTH HEREIN IS FOUND TO HAVE FAILED OF ITS ESSENTIAL PURPOSE.</div>
+        <div class="content">IN NO EVENT WILL OUR AGGREGATE LIABILITY ARISING OUT OF OR IN CONNECTION WITH THE COMPANY TERMS OR FROM THE USE OF OR INABILITY TO USE THE WIFI EXCEED THE AMOUNT YOU HAVE PAID FOR USE OF THE WIFI OR $100, WHICHEVER IS HIGHER. THE LIMITATIONS OF DAMAGES SET FORTH ABOVE ARE FUNDAMENTAL ELEMENTS OF THE BASIS OF THE BARGAIN BETWEEN US AND YOU. SOME JURISDICTIONS DO NOT ALLOW THE EXCLUSION OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES, SO THE ABOVE LIMITATION MAY NOT APPLY TO YOU.</div>
+        <div class="content is-size-4">INDEMNITY:</div>
+        <div class="content">You agree to defend, indemnify, and hold us, our subsidiaries and affiliates, and our officers, directors, employees and agents, harmless from and against any claims, liabilities, damages, losses, and expenses, including, without limitation, reasonable legal and accounting fees, arising out of or in any way connected with your access to or use of the WiFi, or your violation of the Terms.</div>
+        <div class="content is-size-4">GENERAL:</div>
+        <div class="content"><em>No Third-Party Beneficiaries:</em>&nbsp;You agree that, except as otherwise expressly provided in the Terms, there shall be no third-party beneficiaries to the Terms.</div>
+        <div class="content"><em>Entire Agreement:</em>&nbsp;The Company Terms, together with the Privacy Policy and any other legal notices or additional terms and conditions or policies applicable to you through access to or use of the WiFi, shall constitute the entire agreement between you and us concerning the WiFi service. If any provision of the Company Terms is deemed invalid by a court of competent jurisdiction, the invalidity of such provision shall not affect the validity of the remaining provisions of the Company Terms, which shall remain in full force and effect.</div>
+        <div class="content"><em>Waiver:</em>&nbsp;No waiver of any provision of this the Company Terms shall be deemed a further or continuing waiver of such term or any other term, and our failure to assert any right or provision under the Company Terms shall not constitute a waiver of such right or provision.</div>
+        <div class="content"><em>Statute of Limitations:</em>&nbsp;You agree that regardless of any statute or law to the contrary, any claim arising out of or related to the WiFi offered therein must commence within one (1) year after the cause of action accrues. Otherwise, such cause of action is permanently barred.</div>
+        <div class="content"><em>Section Headings:</em>&nbsp;The section headings and Tips sections in the Company Terms are for convenience only and have no legal or contractual effect.</div>
+        <div class="content"><em>Contact Information:</em>&nbsp;If you have any questions about the Company Terms or the WiFi service, please contact us by sending an email to&nbsp;<a href="mailto:support@nposystems.com">support@nposystems.com</a>.</div>
+        <div class="content">&nbsp;</div>
+    </div>
+</div>
+</body>
+</html>
